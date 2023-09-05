@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Moj krevet-My bed</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="umetniciDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni ">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="indexEng.html" class="dropdown-item">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About usEng.html" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                    Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                    Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                    My profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row sadrzaj tekst van_gog">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2><b>My bed</b></h2>
+            <hr>
+            <div class="info" style="display: flex; flex-direction: row;">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="umetnici i umetnine/umetnine/9.jpg" alt="Moj krevet" width="60%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <hr style="width: 70%;">
+                            <p>My bed is the work of English artist Tracey Emin. First created in 1998, it was exhibited at the Tate Gallery in 1999.
+                                as one of the works shortlisted for the Turner Prize. It consisted of her bed with items
+                                in the bedroom in a disheveled state and attracted a lot of media attention. Although he did not win an award, his notoriety
+                                 survived. It was auctioned by Christie's in July 2014 for £2,546,500. The idea for My bed was
+                                  was inspired by a sexual but depressing phase in the artist's life when she lay in bed for four days without eating
+                                   or drinks nothing but alcohol. When she looked at the vile, repulsive mess that had accumulated in her room, suddenly
+                                    realized what she had created. Emin passionately defended My Bed against critics who treated it as a farce and claimed
+                                     that anyone can expose an unmade bed. To these claims, the artist responded: "Well, they're not, are they? No one has done that before
+                                     he didn't."
+                            </p>
+                            <a href="Trejsi Emin-Tracey EminEng.html" class="btn btn-primary vise">
+                                Artist overview
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p id="greska" style="color: red; font-size: smaller;"></p>
+                                    <label for="unosPonude"><b>Your offer:</b></label>
+                                    <br><br>
+                                    <input type="text" placeholder="Make an offer here" id="unosPonude" class="unos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <button class="btn vise buttonPonuda" onclick="ostavitePonudu()">Make an offer</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <br>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

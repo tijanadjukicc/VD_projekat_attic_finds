@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Zvezdana noc-Stary Night</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="umetniciDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn  meni active">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn  meni">
+                            Eng
+                        </button>
+                        <button type="button" class="btn  dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Meni
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html" class="dropdown-item">
+                                    Početna
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About us.html" class="dropdown-item">
+                                    O nama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-News.html" class="dropdown-item">
+                                    Novosti
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-Artists.html" class="dropdown-item">
+                                    Umetnici
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-Art.html" class="dropdown-item">
+                                    Umetnine
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-Login.html" class="dropdown-item">
+                                    Moj nalog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row sadrzaj tekst van_gog">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2><b>Zvezdana noć</b></h2>
+            <hr>
+            <div class="info" style="display: flex; flex-direction: row;">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="umetnici i umetnine/umetnine/5.jpg" alt="Zvezdana noć" width="60%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <hr style="width: 70%;">
+                            <p>Zvezdana noć je jedna od najpoznatijih slika Vinsenta van Goga i označava odlučan zaokret ka većoj 
+                                slobodi mašte u njegovoj umetnosti. Slikana u junu 1889. godine, ona prikazuje pogled noću iz prozora 
+                                sobe sanatorijuma u Sen Remiju u Provansi u južnoj Francuskoj, iako je slikana po sećanju tokom dana. Od 1941. 
+                                godine ova slika je u stalnoj kolekciji Muzeja moderne umetnosti u Njujorku.
+                                U maju 1889. godine Vinsent van Gog je odlučio da ode u sanatorijum u Sen Remiju, gde je ostao do
+                                 naredne godine. Inspirisan pejzažom koji okružuje sanatorijum, naslikao je Zvezdanu noć mesec dana nakon
+                                  dolaska i 13 meseci pre samoubistva.
+                                U tom periodu Vinsent piše svom bratu Teu: "Večno je pitanje, da li nam je dato da pre smrti
+                                 spoznamo samo jednu hemisferu. Što se mene tiče, odgovora nema, ali zvezde me uvek podstiču na razmišljanje."
+                                Slika Zvezdana noć prikazuje seoski pejzaž noću, sa brežuljcima u pozadini. 
+                                Stvoren je prizor uznemirenog treperenja elemenata prirode i ljudskog sveta, dok se selo pruža prema
+                                 nebu uz spiralne i zapletene pokrete.
+                            </p>
+                            <a href="Van Gog-Van Gogh.html" class="btn btn-primary vise">
+                                Pregled umetnika
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p id="greska" style="color: red; font-size: smaller;"></p>
+                                    <label for="unosPonude"><b>Vaša ponuda:</b></label>
+                                    <br><br>
+                                    <input type="text" placeholder="Unesite ponudu" id="unosPonude" class="unos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <button class="btn vise buttonPonuda" onclick="ostavitePonudu()">Ostavite ponudu</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <br>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

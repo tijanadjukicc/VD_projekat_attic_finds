@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Umetnine-Art</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="skripta0.js"></script>
+    <script src="skripta.js"></script>
+    <style>
+        .card{
+            /* height: 565px; */
+            width:100%; 
+            height: fit-content;
+            padding: 11px !important; 
+            /* margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 20px !important; */
+            margin: 3px !important;
+            margin-left: 0px !important;
+        }
+        .delo{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 20px !important;
+        }
+        
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .checkbox{
+            transform: scale(2);
+        }
+        td{
+            
+            padding-right: 10px;
+        }
+        .card-body p{
+            font-style: italic;
+            font-size: smaller;
+        }
+        #prtraga{
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        }
+        #filterMeni:hover{
+            transform: scale(1.1);
+        }
+        #autoriMeni:hover{
+            transform: scale(1.1);
+        }
+        #lupa:hover{
+            transform: scale(1.1);
+        }
+        .svaDela{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .card-img-top{
+            cursor: pointer !important;
+        }
+        .padajuceOpcije{
+            cursor: pointer;
+        }
+        #lupa{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="umetnineDogadjaji()">
+
+    <div class="slike" style="display: none;">
+        galerija/VanGog/vanG.jpg,galerija/VanGog/vang2.jpg
+    </div>
+    <div class="slike2" style="display: none;">
+        galerija/bicikl/bic1.jpg,galerija/bicikl/bicikli.jpeg
+    </div>
+    <div class="slike3" style="display: none;">
+        galerija/secanje/secanje.jpg,galerija/secanje/secanje2.jpg
+    </div>
+    <div class="slike4" style="display: none;">
+        galerija/djakometi/djakometi.png,galerija/djakometi/djakometi2.png
+    </div>
+    <div class="slike5" style="display: none;">
+        galerija/sjemena/sjemena.jpg,galerija/sjemena/sjemena3.jpg
+    </div>
+    <div class="slike6" style="display: none;">
+        galerija/terasa/terasa2.jpg,galerija/terasa/tr.jpg
+    </div>
+    <div class="slike7" style="display: none;">
+        galerija/noc/noc.png,galerija/noc/noc2.jpg
+    </div>
+    <div class="slike8" style="display: none;">
+        galerija/vaza/vaza.jpg,galerija/vaza/vaze2.png
+    </div>
+    <div class="slike9" style="display: none;">
+        galerija/KLJUC/kljuc.jpg,galerija/KLJUC/kljuc2.png
+    </div>
+    <div class="slike10" style="display: none;">
+        galerija/krevet/kreve.png,galerija/krevet/kreve2.jpg
+    </div>
+
+
+
+
+
+    <div class="modal">
+        <span class="zatvori">&times;</span>
+        <div class="modal-sadrzaj">
+          <img class="modal-slika" src="" alt="">
+          <div class="strelica prethodna">&#10094;</div>
+          <div class="strelica sledeca">&#10095;</div>
+        </div>
+    </div>
+
+
+
+
+
+
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <!--<a href="#" class="linkovi"><img src="meni/antiko4.png" alt="Meni" id="meni"></a>-->
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active ">
+                            Eng
+                        </button>
+                        <button type="button" class="btn  dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="indexEng.html" class="dropdown-item">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About usEng.html" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                    Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                    Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                    My profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="display: flex; justify-content: center; height: fit-content; padding-top: 5%;">
+            <div class="forma tekst registracija">
+                
+                <p class="test"></p>
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Search.." id="pretraga"></td>
+                        <td id="lupa"><i class="fa fa-search" aria-hidden="true" onclick="pretrazi()"></i>
+                        </td>
+                    </tr>
+                </table>
+                
+                <hr>
+                
+                <table id="filterMeni" onclick="prikaziFiltere()">
+                    <tr>
+                        <td><i class="fa fa-filter"></i></td>
+                        <td class="padajuceOpcije">Filter your search</td>
+                        <td><i class="fa fa-angle-double-down" aria-hidden="true"></i><td>
+                    </tr>
+                </table>
+                <div id="filteri">
+                    <table style="font-size: 15px;">
+                        <tr>
+                            <td><input type="checkbox" name="Slike" id="slikeC" class="checkbox"></td>
+                            <td>Pictures</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Skulpture" id="skulptureC" class="checkbox"></td>
+                            <td>sculptures</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="Ostalo" id="ostaloC" class="checkbox"></td>
+                            <td>other</td>
+                        </tr>
+                    </table>
+                    <table id="autoriMeni" onclick="prikaziFiltereAutora()">
+                        <tr>
+                            <td class="padajuceOpcije">Filter by the author of the work</td>
+                            <td><i class="fa fa-angle-double-down" aria-hidden="true"></i><td>
+                        </tr>
+                    </table>
+                    <div id="filteriAutori">
+                        <table style="font-size: 15px;">
+                            <tr>
+                                <td><input type="checkbox" name="gog" id="gogC" class="checkbox"></td>
+                                <td>Van Gogh</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="wei" id="weiC" class="checkbox"></td>
+                                <td>Ai Weiwei</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="dali" id="daliC" class="checkbox"></td>
+                                <td>Salvador Dali</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="djakometi" id="djakometiC" class="checkbox"></td>
+                                <td>Alberto Giacometti</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="mone" id="moneC" class="checkbox"></td>
+                                <td>Claude Monet</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="shiota" id="shiotaC" class="checkbox"></td>
+                                <td>Chiaru Shiota</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="emin" id="eminC" class="checkbox"></td>
+                                <td>Tracey Emin</td>
+                            </tr>
+                        </table> 
+                     
+                    
+                </div>
+                <br>
+                <div class="btn vise" style="color: white; margin-left: 30%" onclick="filtriraj()" >Filter</div>   
+                </div>
+                <br>
+                <table id="autoriMeni" onclick="prikaziSortiranje()">
+                    <tr>
+                        <td><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                        </td>
+                        <td class="padajuceOpcije">Sort your search</td>
+                        <td><i class="fa fa-angle-double-down" aria-hidden="true"></i><td>
+                    </tr>
+                </table>
+                <br>
+                <div id="sort" class="btn vise" style="color: white; margin-left: 30%" onclick="sortiraj()" >Sort</div>
+                
+            </div>
+        </div>
+        <div class="col-sm-9 tekst" style="padding-right: 40px;">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2 id="mi"><b>Works of art</b></h2>
+            <hr>
+            <div class="svaDela" id="svaDela">
+                    <div class="col-sm-3 slika delo self portrait van gog kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/0.jpg" alt="umetnina" class="card-img-top AutoPort">
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title">
+                                        Self portrait
+                                    </h2>
+                                    <p>Van Gogh</p>
+                                </div>
+                                <a href="Autoportret-SelfportraitEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 skulptura delo forever a bike ai weiwei kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/1.jpg" alt="umetnina" class="card-img-top Bicikl">
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title">
+                                        Forever a bike
+                                    </h2>
+                                    <p>Ai Weiwei</p>
+                                </div>
+                                <a href="Zauvek bicikl-Forever a bikeEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 slika delo persistence of memory salvador dali kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/2.png" alt="umetnina" class="card-img-top Secanje">
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title">
+                                        Persistence of memory
+                                    </h2>
+                                    <p>Salvador Dali</p>
+                                </div>
+                                <a href="Upornost secanja-Persistence of memoryEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 skulptura delo l homme au dogit alberto djakometi đakometi kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/3.jpg" alt="umetnina" class="card-img-top Djakomet">
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title">
+                                        L'homme au doigt
+                                    </h2>
+                                    <p>Alberto Giacometti</p>
+                                </div>
+                                <a href="L'homme au doigtEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 ostalo sunflower seeds ai weiwei delo kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/7.jpg" alt="umetnina" class="card-img-top Sjemena">
+                            <div class="card-body">
+                                <div><h2 class="card-title">
+                                    Sunflower seeds
+                                </h2>
+                                <p>Ai Weiwei</p></div>
+                                <a href="Semenke suncokreta-Sunflower seedsEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 slika delo terrace in st. st address klod mone kartica claude monet">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/4.jpg" alt="umetnina" class="card-img-top Teraca">
+                            <div class="card-body ">
+                                <div>
+                                    <h2 class="card-title">
+                                        Terrace in St. Address
+                                    </h2>
+                                    <p>Claude Monet</p>
+                                </div>
+                                <a href="Terasa u Sent Adresu-Terrace in St. AddressEng.html" class="btn btn-primary vise">
+                                    Više
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 slika delo starry night van gog kartica">
+                        <div class="card">
+                            <img src="umetnici i umetnine/umetnine/5.jpg" alt="umetnina" class="card-img-top Noc">
+                            <div class="card-body">
+                                <div>
+                                    <h2 class="card-title">
+                                        The Starry Night
+                                    </h2>
+                                    <p>Van Gogh</p>
+                                </div>
+                                <a href="Zvezdana noc-Stary NightEng.html" class="btn btn-primary vise">
+                                    Više
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="col-sm-3 skulptura delo colored vases ai weiwei kartica">
+                    <div class="card">
+                        <img src="umetnici i umetnine/umetnine/6.png" alt="umetnina" class="card-img-top Vaza">
+                        <div class="card-body">
+                            <div><h2 class="card-title">
+                                Colored vases
+                            </h2>
+                            <p>Ai Weiwei</p></div>
+                            <a href="Obojene vaze-Colored vasesEng.html" class="btn btn-primary vise">
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 delo chiaru shiota key in hand ostalo key in the hand kartica">
+                    <div class="card">
+                        <img src="umetnici i umetnine/umetnine/8.jpg" alt="umetnina" class="card-img-top Kljucevi">
+                        <div class="card-body">
+                            <div><h2 class="card-title">
+                                The key in the hand
+                            </h2>
+                            <p>Chiaru Shiota</p></div>
+                            <a href="Kljuc u ruci-Key in handEng.html" class="btn btn-primary vise">
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 delo ostalo tracey emin moj krevet my bed trejsi kartica">
+                    <div class="card">
+                        <img src="umetnici i umetnine/umetnine/9.jpg" alt="umetnina" class="card-img-top Kreve">
+                        <div class="card-body">
+                            <div><h2 class="card-title">
+                                My bed
+                            </h2>
+                            <p>Trejsi Emin</p></div>
+                            <a href="Moj krevet-My bedEng.html" class="btn btn-primary vise">
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--***FILTRIRANA DELA-->
+            <div class="filtriranaDela" id="filtriranaDela"></div>
+        </div>
+    </div>
+    <br>
+    <div class="footer row">
+        <div class="col-12">
+            <br>
+            <p>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

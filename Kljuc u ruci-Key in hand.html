@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Kljuc u ruci-Key in hand</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="umetniciDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni active">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Meni
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html" class="dropdown-item">
+                                    Početna
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About us.html" class="dropdown-item">
+                                    O nama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-News.html" class="dropdown-item">
+                                    Novosti
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-Artists.html" class="dropdown-item">
+                                    Umetnici
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-Art.html" class="dropdown-item">
+                                    Umetnine
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-Login.html" class="dropdown-item">
+                                    Moj nalog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row sadrzaj tekst van_gog">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2><b>Ključ u ruci</b></h2>
+            <hr>
+            <div class="info" style="display: flex; flex-direction: row;">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="umetnici i umetnine/umetnine/8.jpg" alt="Ključ u ruci" width="60%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <hr style="width: 70%;">
+                            <p>Ključevi su poznate i veoma vredne stvari koje štite važne ljude i prostore u našim životima. 
+                                Takođe nas inspirišu da otvorimo vrata nepoznatim svetovima. Imajući u vidu ova razmišljanja,
+                                 u ovoj novoj instalaciji želeo bih da koristim ključeve široke javnosti koji su prožeti raznim sećanjima
+                                  i sećanjima koja su se akumulirala tokom dužeg perioda svakodnevne upotrebe. Dok stvaram rad u prostoru, 
+                                  sećanja svih koji mi daju svoje ključeve po prvi put će se preklapati sa mojim sopstvenim sećanjima. 
+                                  Ova sećanja koja se preklapaju će se zauzvrat kombinovati sa uspomenama ljudi iz celog sveta koji dolaze 
+                                  da vide bijenale, dajući im priliku da komuniciraju na nov način i bolje razumeju osećanja jedni drugih.
+                                Na ovoj izložbi, Shiota će integrisati galeriju koja se nalazi na drugom spratu i otvoreni pilot na prvom 
+                                spratu Japanskog paviljona. Po ulasku u galeriju, gledaoci će pronaći prostor ispunjen crvenim predivom. Prikačen
+                                na kraj svakog komada prediva, okačen sa plafona, biće ključ. U našem svakodnevnom životu, 
+                                ključevi štite vredne stvari kao što su naše kuće, imovina i lična bezbednost, a mi ih koristimo 
+                                dok ih grlimo u toplini naših ruku.
+                            </p>
+                            <a href="Chiaru Shiota.html" class="btn btn-primary vise">
+                                Pregled umetnika
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p id="greska" style="color: red; font-size: smaller;"></p>
+                                    <label for="unosPonude"><b>Vaša ponuda:</b></label>
+                                    <br><br>
+                                    <input type="text" placeholder="Unesite ponudu" id="unosPonude" class="unos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <button class="btn vise buttonPonuda" onclick="ostavitePonudu()">Ostavite ponudu</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <br>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

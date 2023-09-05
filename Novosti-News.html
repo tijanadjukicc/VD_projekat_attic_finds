@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Novosti-News</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="novostiDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <div class="dropdown" id="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni active">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Meni
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html" class="dropdown-item">
+                                    Početna
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About us.html" class="dropdown-item">
+                                    O nama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-News.html" class="dropdown-item">
+                                    Novosti
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-Artists.html" class="dropdown-item">
+                                    Umetnici
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-Art.html" class="dropdown-item">
+                                    Umetnine
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-Login.html" class="dropdown-item">
+                                    Moj nalog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <div class="sadrzaj row" style="padding: 11px; margin: 11px;">
+        <div class="row">
+            <div class="col-sm-2">
+                <h5>Pregled:</h5>
+                <hr>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#radionica" style="color: #9b5d00;">Slikarska radionica</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+            <div class="col-sm-8 tekst">
+                <ul class="breadcrumb" id="breadcrumb">
+                </ul>
+                <h2><b>Novosti</b></h2>
+                <h3 id="radionica"><u><b>Slikarska radionica</b></u></h3>
+                
+                <p>Radionica slikarstva u organizaciji naše galerije umetnina predstavlja jedinstvenu priliku za sve ljubitelje umetnosti da se upuste u svet boja, tekstura i kreativnosti. Ova inspirativna radionica, koja će se održati u našem prelepo uređenom prostoru galerije, pružiće polaznicima mogućnost da nauče nove tehnike slikanja i da izraze svoju umetničku viziju.
+                </p>
+                <p>Na čelu ove izuzetne radionice nalaze se priznati slikari i umetnici, koji će deliti svoje bogato znanje i iskustvo sa polaznicima. Među našim predavačima su Ana Petrović, istaknuta slikarka apstraktne umetnosti koja će voditi radionicu o kreativnom eksperimentisanju bojama i teksturama, i Marko Ivanović, majstor realizma, koji će se fokusirati na tehniku slikanja portreta. Ova raznolikost predavača omogućava polaznicima da se upuste u različite stilove slikarstva i istraže svoje afinitete.
+                </p>
+                <img src="slike galerije/9.jpg" alt="radionica" class="w-75">
+                <br><br>
+                <p>Na radionicama slikarstva će se raditi na različitim temama i tehnikama, prilagođenim nivou i interesovanjima polaznika. Polaznici će imati priliku da uče osnove kompozicije, perspektive, upotrebe boja i senki, kao i tehničke veštine slikanja. Kroz praktične vežbe, demonstracije i individualnu podršku predavača, svaki polaznik će imati priliku da razvija svoje veštine i izrazi svoju umetničku interpretaciju.
+                </p>
+                <p>Uz to, na radionicama će biti organizovane i tematske diskusije o umetnosti, kao i posete našoj bogatoj zbirci umetnina, što će dodatno obogatiti iskustvo polaznika. Naša galerija nudi inspirativan ambijent i kreativnu atmosferu koja podstiče umetničko stvaralaštvo.
+                </p>
+                <img src="slike galerije/radionica0.avif" alt="radionica" class="w-75">
+                <br><br>
+                <p>Radionica slikarstva u našoj galeriji umetnina je savršen način da se izrazi kreativnost, istraže nove tehnike i tehnologije slikanja, i poveže sa drugim ljubiteljima umetnosti. Nezavisno od iskustva i veština u slikanju, svako je dobrodošao da se pridruži ovoj inspirativnoj radionici i istraži svoju umetničku stranu. Pridružite nam se i zajedno stvarajmo remek-dela na platnu!
+                </p>
+                <p>Radionice će se odvijati svake nedelje u periodu od 12.05.2023. do 12.07.2023. po dole navedenom rasporedu.</p>
+                <h4><u>Raspored radionica:</u></h4>
+                <table class="table table-striped table-bordered table-sm table-striped" style="width: 80%; align-self: center;">
+                    <tr>
+                        <th>Dan</th>
+                        <th>Vreme</th>
+                        <th>Predavač</th>
+                        <th>Sala</th>
+                    </tr>
+                    <tr>
+                        <td>Ponedeljak</td>
+                        <td>10:00-12-00</td>
+                        <td>Ana Petrović</td>
+                        <td>Sala A</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>13:00-17:00</td>
+                        <td>Ana Petrović</td>
+                        <td>Sala B</td>
+                    </tr>
+                    <tr>
+                        <td>Utorak</td>
+                        <td>11:00-13:00</td>
+                        <td>Milena Jovanović</td>
+                        <td>Sala C</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>14:00-16:00</td>
+                        <td>Nikola Radovanović</td>
+                        <td>Sala D</td>
+                    </tr>
+                    <tr>
+                        <td>Četvrtak</td>
+                        <td>11:00-13:00</td>
+                        <td>Nikola Radovanović</td>
+                        <td>Sala C</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>14:00-16:00</td>
+                        <td>Milena Jovanović</td>
+                        <td>Sala A</td>
+                    </tr>
+                    <tr>
+                        <td>Petak</td>
+                        <td>10:00-12:00</td>
+                        <td>Ana Petrović</td>
+                        <td>Sala A</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>13:00-15:00</td>
+                        <td>Marko Ivanović</td>
+                        <td>Sala B</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-2">
+                
+                <p id="menjano"></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

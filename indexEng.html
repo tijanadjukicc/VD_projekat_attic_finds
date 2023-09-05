@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">index</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="indexDogadjaji()"> <!--#00220F zelena boja iz logoa-->
+    
+   <!--navbar-->
+   <nav class="navbar navbar-expand-sm" id="navigacija">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo/10logo.png" alt="attic finds" id="icon">
+        </a>
+        <ul class="navbar-nav">
+            <il class="nav-item">
+                <!--<a href="#" class="linkovi"><img src="meni/antiko4.png" alt="Meni" id="meni"></a>-->
+                <div class="dropdown">
+                    <button id="srb" onclick="prevediSrpski()" type="button" class="btn  meni">
+                        Srb
+                    </button>
+                    <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active ">
+                        Eng
+                    </button>
+                    <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="indexEng.html" class="dropdown-item">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="O nama-About usEng.html" class="dropdown-item">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                Artists
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                Art
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                My profile
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </il>
+        </ul>
+    </div>
+</nav>
+    <hr>
+    <!--carousel-->
+    <div class="container-fluid row" style="padding-left: 0px; padding-right: 0px; margin-right: 0px; width: 100%;">
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <!--indikatorske tacke-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+                    </div>
+    
+                    <!--slike-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="Novosti-NewsEng.html#radionica">
+                                <img src="slike galerije/9.jpg" alt="galerija" class="d-block w-100 sl">
+                                <div class="naslovC">ART WORKSHOP</div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="Umetnine-ArtEng.html">
+                                <img src="slike galerije/11.1.jpg" alt="galerija" class="d-block w-100 sl">
+                                <div class="naslovC">DISCOVER OUR OFFER OF ART</div>
+                            </a>
+                        </div>
+                        
+                    </div>
+    
+                    <!--navigacija-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            
+        
+    </div>
+    <hr>
+
+    <!--DOBRODOSLICA-->
+    <div class="row welcome">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 vremeNaslov">
+            <div class="row">
+                <div class="naslov col-sm-6">
+                    <p>
+                        <p>Allow art to surprise you and challenge your beliefs</p>
+                    </p>
+                </div>
+                <div class="vreme col-sm-6" style="align-items: center;">
+                    <img src="ikonice/sat2.png" alt="" height="16px" style="float: left; margin-right: 4px; margin-top: 3px;">
+                    <p> Working days: 9:00-17:00</p>
+                </div>
+            </div>
+            <hr> <!--OVOOO BRISES KASNIJE-->
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <!--SADRZAJ STRANICE-->
+    <div class="sadrzaj">
+        <div class="row parallax" style="background-image: url(pozadina/pozadina.webp); height: 100%; background-attachment: fixed;">
+            <div class="row tekst" style="margin-top: 100px;">
+                <div class="col-2">  
+                </div>
+                <div class="col-8" style="margin-top: 11px;">
+                    <h2>
+                        New in the gallery
+                    </h2>
+                    <hr style="background-color: black;">
+                    <div class="row noveUm">
+                        <div class="col-sm-4 card" style="width: 300px; padding: 11px; margin: 10px;">
+                            <img src="umetnici i umetnine/umetnine/0.jpg" alt="umetnina" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    Self portrait
+                                </h2>
+                                <p class="card-text">
+                                    Van Gogh
+                                </p>
+                                <a href="Autoportret-SelfportraitEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 card" style="width: 300px; padding: 11px; margin: 10px;">
+                            <img src="umetnici i umetnine/umetnine/2.png" alt="umetnina" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    Persistence of memory
+                                </h2>
+                                <p class="card-text">
+                                    Salvador Dali, 1931.
+                                </p>
+                                <a href="Upornost secanja-Persistence of memoryEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 card" style="width: 300px; padding: 11px; margin: 10px;">
+                            <img src="umetnici i umetnine/umetnine/4.jpg" alt="umetnina" class="card-img-top">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    Terrace in St. Address
+
+                                </h2>
+                                <p class="card-text">
+                                    Claude Monet, 1867, oil on canvas.
+                                </p>
+                                <a href="Terasa u Sent Adresu-Terrace in St. AddressEng.html" class="btn btn-primary vise">
+                                    More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-2">
+                </div>
+            </div>
+    
+            <div class="row tekst" style="margin-top: 300px;">
+                <div class="col-2">  
+                </div>
+                <div class="col-8" style="margin-top: 11px;">
+                    <br>
+                    <h2>
+                        What we offer?
+                    </h2>
+                    <hr style="background-color: black;">
+                    <table>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>A diverse collection of works of art</td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>Exhibitions of renowned artists
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>Spatial experience and ambience
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>They sell and buy works of art
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>Assessment of the authenticity and market value of the work
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>Art workshops and courses
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="ikonice/check0.png" alt="*" width="60px"></td>
+                            <td>Cultural manifestations and events
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+                
+                <div class="col-2">
+                </div>
+            </div>
+            <div class="row tekst" style="margin-top: 300px;">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <h3><b>How to reach us?
+                    </b></h3>
+                    <hr style="background-color: black;">
+                    <br>
+                    <div class="row" id="lokacija">
+                        <div class="col-sm-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11323.15265976088!2d20.4761359!3d44.8055056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9f5ee145d3%3A0x3ed89b5bb505d83!2sUniversity%20of%20Belgrade%20School%20of%20Electrical%20Engineering!5e0!3m2!1sen!2srs!4v1683870225810!5m2!1sen!2srs" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="col-sm-6" style="display:flex; flex-direction: column; justify-content: space-between;">
+        
+        
+                            <table>
+                                <tr>
+                                    <td><img src="ikonice/telefon.png" alt="Kontakt telefon:" height="30px" width="30px"></td>
+                                    <td><a href="tel:0113226760">(011) 3226-760</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="ikonice/mail.png" alt="E-mail:" height="30px" width="30px"></td>
+                                    <td><a href="mailto:stud_sluzba@etf.bg.ac.rs">stud_sluzba@etf.bg.ac.rs</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="ikonice/instagram.png" alt="Instagram:" height="30px" width="30px"></td>
+                                    <td><a href="https://www.instagram.com/etfbgd/?hl=en" style="color: #9b5d00;">@atticfinds</a></td>
+                                </tr>
+                            </table>
+                            <img src="logo/101.png" alt="logo" height="35%" width="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+body{
+    background-color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+/*navbar*/
+#navigacija {
+    background-color: #00220F;
+    padding: 0;
+    width: 100% !important;
+    align-content: center;
+}
+
+/*meni*/
+.meni{
+    background-color: #00220F;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #154129;
+    box-shadow: #026d30 -15px 0px 15px -15px;
+}
+
+.vise{
+    background-color: #9b5d00;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.meni:hover, .meni:focus, .meni:active, .vise:hover, .vise:focus{
+    background-color:  #9b5d00 !important;
+    color: white;
+}
+
+/*logo*/
+#icon{
+    height: 65px;
+}
+
+/*tekstovi*/
+.tekst{
+    font-size: 15pt;
+    text-align: left;
+    background-color: whitesmoke !important;
+    background-attachment: scroll !important;
+    padding: 11pt;
+}
+
+.footer{
+    font-size: 7pt;
+    text-align: center;
+    color: black;
+    background-color: white;
+    font-style: italic;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0 !important;
+    position: fixed;
+    width: 100%;
+}
+
+a{
+    color:  #9b5d00;
+    text-decoration: none;
+}
+
+a:focus{
+    color:  #9b5d00
+}
+
+a:hover{
+    color:  #9b5d00
+}
+
+.list-group-item:hover{
+    background-color:#9b5d007f;
+}
+
+.forma{
+    width: max-content !important;
+    background-color: white !important;
+    border-radius: 15px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+input{
+    height: 50px;
+    border-radius: 15px;
+    background-color: #00220f10;
+    font-style: italic;
+    font-size: 17px;
+}
+
+input[type=text]{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: black;
+}
+
+.dropdown-item:focus{
+    background-color: #9b5d0079 !important;
+}
+
+.breadcrumb-item.active{
+    text-decoration: none !important;
+}
+
+
+.card-title{
+    font-size: 25px;
+}
+
+.card{
+    height: 550px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+#mojePonudeTabela{
+    width: 100%;
+}
+
+#unosPonude{
+    height: 150px !important;
+    width: 70% !important;
+}
+
+.buttonPonuda{
+    background-color: #00220F !important;
+}
+
+.selected{
+    color: gray !important;
+    text-decoration: none;
+}

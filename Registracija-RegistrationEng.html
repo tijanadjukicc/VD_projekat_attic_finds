@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Registracija-Registration</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+    
+</head>
+<body onload="mojNalogRegDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni ">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="indexEng.html" class="dropdown-item">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About usEng.html" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                    Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                    Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                    My profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div class="row tekst">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <ul class="breadcrumb" id="breadcrumb">
+                </ul>
+                <h2><b>Registration</b></h2>
+                <hr>
+                <div class="forma tekst registracija">
+                    <p id="greska" style="color: red; font-size: smaller;"></p>
+                    <label for="korisnickoIme">Username:</label>
+                    <br>
+                    <input type="text" placeholder="Enter a username" id="korisnickoIme" class="unos">
+                    <br><br>
+                    <label for="mejl">Mail:</label>
+                    <br>
+                    <input type="text" placeholder="Enter a mail" id="mejl">
+                    <br><br>
+                    <label for="telefon">Telephone number:</label>
+                    <br>
+                    <input type="text" placeholder="Enter a telephone number" id="telefon">
+                    <br><br>
+                    <div style="display: flex; flex-direction: row;">
+                        <div> 
+                            <label for="lozinka">Password:</label>
+                            <br>
+                            <input type="text" placeholder="Enter a password" id="lozinka">
+                        </div>
+                        <div style="margin-left: 15px;">
+                            <label for="potvrdaLozinke">Password confirmation:</label>
+                            <br>
+                            <input type="text" placeholder="Enter a confirmation password" id="potvrdaLozinke">
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    Have an account? Sign up <a href="Moj nalogPrijava-LoginEng.html">here</a>.
+                    <br><br>
+                    <div class="btn vise" style="color: white;" onclick="registrujSe()" >Register</div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br><br>
+        <div class="footer row">
+            <div class="col-sm-12">
+                <p>
+                    <br>
+                    Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                    Универзитета у Београду
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>

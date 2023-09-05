@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Trejsi Emin-Tracey Emin</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="umetniciDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <!--<a href="#" class="linkovi"><img src="meni/antiko4.png" alt="Meni" id="meni"></a>-->
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active ">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="indexEng.html" class="dropdown-item">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About usEng.html" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                    Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                    Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                    My profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row sadrzaj tekst trejsi_emin">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2><b>Tracey Emin</b></h2>
+            <hr>
+            <div class="info" style="display: flex; flex-direction: row;">
+                <div class="col-sm-6"><img src="umetnici i umetnine/tracey emin portret.jpg" alt="Trejsi Emin" width="60%"></div>
+                <div class="col-sm-6">
+                    <p>Tracey Emin is a British artist whose works reveal deep intimacy, vulnerability and honesty.
+                        Her work often explores themes such as love, sexuality, identity and trauma. One of her most famous
+                        the installation is "My Bed", where she exhibited her personal bed that was full of mess, dirt and intimate
+                         subject. Through this installation, Emin openly displayed her inner struggles and emotional states. Her works
+                          they provoke strong reactions, challenging the audience to reflect on their own experiences and emotional journeys.
+                          Tracey Emin is an artist who boldly steps outside conventional boundaries and wins the hearts of audiences with her honesty
+                          and authenticity.
+                    </p>
+                    <a href="umetnici i umetnine/pdf-ovi/tracey_emin.pdf" class="btn btn-primary vise">
+                        An overview of the work
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <br>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>

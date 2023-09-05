@@ -1,0 +1,63 @@
+
+ 
+  
+ 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-sadrzaj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  
+  .modal-slika {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  
+  .strelica {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .strelica.prethodna {
+    left: 20px;
+  }
+  
+  .strelica.sledeca {
+    right: 20px;
+  }
+  
+  .zatvori {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  .slike {
+    display: none;
+  }
+
+
+
+

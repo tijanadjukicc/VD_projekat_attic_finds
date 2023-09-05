@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Zauvek bicikl-Forever a bike</title>
+    <link rel="icon" type="images/x-icon" href="logo/103333.png" />
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleTemplate.css">
+    <script src="skripta0.js"></script>
+</head>
+<body onload="umetniciDogadjaji()">
+     <!--navbar-->
+     <div class="navbar navbar-expand-sm" id="navigacija">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="logo/10logo.png" alt="attic finds" id="icon">
+            </a>
+            <ul class="navbar-nav">
+                <il class="nav-item">
+                    <!--<a href="#" class="linkovi"><img src="meni/antiko4.png" alt="Meni" id="meni"></a>-->
+                    <div class="dropdown">
+                        <button id="srb" onclick="prevediSrpski()" type="button" class="btn meni">
+                            Srb
+                        </button>
+                        <button id="eng" onclick="prevediEngleski()" type="button" class="btn meni active ">
+                            Eng
+                        </button>
+                        <button type="button" class="btn dropdown-toggle meni" data-bs-toggle="dropdown">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="indexEng.html" class="dropdown-item">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="O nama-About usEng.html" class="dropdown-item">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Novosti-NewsEng.html" class="dropdown-item">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnici-ArtistsEng.html" class="dropdown-item">
+                                    Artists
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Umetnine-ArtEng.html" class="dropdown-item">
+                                    Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Moj nalogPrijava-LoginEng.html" class="dropdown-item">
+                                    My profile
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </il>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row sadrzaj tekst van_gog">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <ul class="breadcrumb" id="breadcrumb">
+            </ul>
+            <h2><b>Forever a bike</b></h2>
+            <hr>
+            <div class="info" style="display: flex; flex-direction: row;">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="umetnici i umetnine/umetnine/1.jpg" alt="Zauvek bicikl" width="60%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <hr style="width: 70%;">
+                            <p>Ai Weiwei, artistic superstar and recently probably the most popular name in the world of art
+                                scene created a spatial installation of 3,144 bicycles.
+                                This is another version of his Forever Bicycles project concept, which is impressive and truly monumental
+                                pays tribute to the most important means of transportation today - the bicycle.
+                                The surreal figure of 3,144 bicycles is arranged in a massive spatial installation, interconnected so
+                                 to form a visually striking structure, the dynamics and impressiveness of which is further enhanced by the illumination of the installation itself.
+                                 The project was installed in Nathan Phillips Square in Toronto, as part of the Scotiabank Nuit Blanche project.
+                                 His first bicycle installation consisted of a thousand bicycles and was placed in an assembly
+                                  his solo exhibitions in Taipei in 2011.
+                            </p>
+                            <a href="Ai WeiweiEng.html" class="btn btn-primary vise">
+                                Artist overview
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p id="greska" style="color: red; font-size: smaller;"></p>
+                                    <label for="unosPonude"><b>Your offer:</b></label>
+                                    <br><br>
+                                    <input type="text" placeholder="Make an offer here" id="unosPonude" class="unos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <br>
+                            <button class="btn vise buttonPonuda" onclick="ostavitePonudu()">Make an offer</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <br>
+    <br>
+    <div class="footer row">
+        <div class="col-sm-12">
+            <p>
+                <br>
+                Copyright 2023, Тијана Ђукић и Андреј Давидовић, Одсек за софтверско инжењерство Електротехничког факултета
+                Универзитета у Београду
+            </p>
+        </div>
+    </div>
+</body>
